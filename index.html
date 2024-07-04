@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather</title>
+    
+</head>
+<link rel="icon" type="image/x-icon" href="https://img.icons8.com/?size=512&id=ZBWgLOFqpYdO&format=png">
+<body>
+    <div class="container">
+        
+        <div class="main">
+            <h1 id="name">--</h1>
+            <h1 id="temp">--</h1>
+            <h1 id="state">--</h1>
+        </div>
+        <div class="box">
+            <div class="icon"><img width="100px" id="img" src="" alt=""></div>
+            <ul>
+                <li><h3>Details : </h3></li>
+                <li class="feel"><h4>Feels Like: <span class="feels"></span></h4></li>
+                <li class="max"><h4 class="hightemp"> <i data-lucide="thermometer-sun"></i>Max Temperature: <span class="temp-max"></span></h4></li>
+                <li class="min"><h4 class="lowtemp"> <i data-lucide="thermometer-snowflake"></i>Min Temperature: <span class="temp-min"></span></h4></li>
+                <li class="longitude"><h4>H:   <span class="l"></span> L: <span class="lat"></span></h4></li>
+                
+            </ul>
+        </div>
+        <div class="hum-spe">
+            
+            <div class="humidity">
+                <h1 class="head">Humidity:</h1>
+                
+                <div class="datamain"><i style="margin: 10px;" width="40" height="40" color="white" data-lucide="droplets" ></i><h1 class="humid"></h1></div>
+
+            </div>
+            
+            <div class="speed">
+                <h1 class="head">Speed:</h1>
+                <div class="datamain">
+                    <i style="margin: 10px;" width="40" height="40" color="white" data-lucide="wind"></i><h1 class="spd"></h1><span class="km"> km/h</span>
+                </div>
+            </div>
+        </div>
+        <div class="searchbar">
+            <input type="text" placeholder="Search for a city..." id="cityInput"/>
+            <button ><i data-lucide="search"></i>
+            </button>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+<!-- Production version -->
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>lucide.createIcons();</script>
+
+</body>
+</html>

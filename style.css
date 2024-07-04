@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;1,100;1,200;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300&display=swap');
+@font-face {
+    font-family: 'SF Pro';
+    src: url(font/SF-Pro-Text-Font-Family/SF-Pro-Text-Light.otf);
+}
+
+*{
+    margin:0;
+    padding:0;
+    font-family: 'SF Pro';
+}
+body{
+    overflow-x: hidden;
+}
+.container{
+background-image: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);
+width:100%;
+height:100vh;
+background-size: auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+background-position: center;
+
+}
+.main{
+display: flex;
+flex-direction: column;
+align-items: center;
+
+color:white;
+
+}
+.main>h1{
+margin:10px 0 0 0;
+}
+#name{
+font-size:30px;
+font-weight: 200;
+
+}
+#temp{
+font-size: 80px;
+font-weight: 200;
+font-family: 'Noto Sans', sans-serif;
+}
+#state{
+font-size: 25px;
+font-weight: 200;
+}
+.searchbar{
+width:100%;
+display:flex;
+align-items: center;
+justify-content: center;
+
+
+}
+.searchbar input{
+border:0;
+outline:0;
+background:#ebfffc;
+padding:10px 25px;
+border-radius:30px;
+font-size: 18px;
+margin-right:10px;
+}
+.searchbar button{
+height:42px;
+width:42px;;
+border:0;
+outline:0;
+background: #ebfffc;
+border-radius: 50%;
+}
+.main{
+margin-top:20px;
+}
+.box{
+width:40%;
+height:fit-content;
+background: rgba( 0, 0, 0, 0.25 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+display: flex;
+flex-direction: column;
+margin-top:50px;
+}
+.icon{
+width:100%;
+display:flex;
+justify-content: center;
+height:fit-content;
+}
+ul{
+list-style-type: none;
+margin:10px;
+color:white;
+}
+li{
+margin:10px;
+}
+.hum-spe{
+margin-top:20px;
+height:130px;
+width:90%;
+display:flex;
+flex-direction: row;
+justify-content: center;
+}
+.humidity{
+display: flex;
+flex-direction: column;
+margin:10px;
+position:relative;
+
+}
+.datamain{
+display: flex;
+flex-direction: row;
+}
+h1.humid{
+color:white;
+font-size:40px;
+}
+.head{
+color:white;
+font-size: 20px;
+}
+.speed{
+margin:10px;
+position:relative;
+}
+h1.spd{
+color:white;
+font-size: 40px;
+}
+.km{
+color:white;
+font-size: 40px;
+}
+
+.container{
+    backdrop-filter: brightness(0.7);
+}
+.hightemp{
+    display: flex;
+    align-items: center;
+}
+.lowtemp{
+    display: flex;
+    align-items: center;
+}
+
+@media only screen
+and (min-device-width : 320px) and (max-device-width : 480px) {
+    body{
+        overflow-x: hidden;
+    }
+  .container{
+    background-image: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);
+    width:100%;
+    height:100vh;
+    background-size: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-position: center;
+ 
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    color:white;
+    
+}
+.main>h1{
+    margin:10px 0 0 0;
+}
+#name{
+    font-size:30px;
+    font-weight: 200;
+    
+}
+#temp{
+    font-size: 80px;
+    font-weight: 200;
+    font-family: 'Noto Sans', sans-serif;
+}
+#state{
+    font-size: 25px;
+    font-weight: 200;
+}
+.searchbar{
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+   
+
+}
+.searchbar input{
+    border:0;
+    outline:0;
+    background:#ebfffc;
+    padding:10px 25px;
+    border-radius:30px;
+    font-size: 18px;
+    margin-right:10px;
+}
+.searchbar button{
+    height:42px;
+    width:42px;;
+    border:0;
+    outline:0;
+    background: #ebfffc;
+    border-radius: 50%;
+}
+.main{
+    margin-top:20px;
+}
+.box{
+    width:90%;
+    height:fit-content;
+    background: rgba( 0, 0, 0, 0.25 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    display: flex;
+    flex-direction: column;
+    margin-top:50px;
+
+    
+
+}
+.icon{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    height:fit-content;
+}
+ul{
+    list-style-type: none;
+    margin:10px;
+    color:white;
+}
+li{
+    margin:10px;
+}
+.hum-spe{
+    margin-top:20px;
+    height:130px;
+    width:90%;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.humidity{
+    display: flex;
+    flex-direction: column;
+    margin:10px;
+    position:relative;
+    
+}
+.datamain{
+    display: flex;
+    flex-direction: row;
+}
+h1.humid{
+    color:white;
+    font-size:40px;
+}
+.head{
+    color:white;
+    font-size: 20px;
+}
+.speed{
+    margin:10px;
+    position:relative;
+}
+h1.spd{
+    color:white;
+    font-size: 40px;
+}
+.km{
+    color:white;
+    font-size: 40px;
+}
+.container{
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+}
